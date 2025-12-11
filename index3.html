@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+        <div class="container">
+        <h2>Регистрация</h2>
+        <form action="/register" method="POST">
+            <div class="form-columns">
+                <!-- Первый столбец: логин, email, пароль -->
+                <div class="column">
+                    <div class="form-group">
+                        <label for="email">e-mail</label>
+                        <input type="email" id="email" name="email" placeholder="xxxxxx@mail.ru" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" name="password" placeholder="Минимум 8 символов" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password_confirm">Подтвердите пароль</label>
+                        <input type="password" id="password_confirm" name="password_confirm" placeholder="Повторите пароль" required>
+                    </div>
+                </div>
+
+                <!-- Второй столбец: персональные данные -->
+                <div class="column">
+                    <div class="form-group">
+                        <label for="first_name">Имя</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="Введите имя" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last_name">Фамилия</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Введите фамилию" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Пол</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Выберите пол</option>
+                            <option value="male">Мужской</option>
+                            <option value="female">Женский</option>
+                            <option value="other">Другой</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birth_date">Дата рождения</label>
+                        <input type="date" id="birth_date" name="birth_date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Я согласен с <a href="/terms" target="_blank">условиями использования</a></label>
+            </div>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
