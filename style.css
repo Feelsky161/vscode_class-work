@@ -2,6 +2,7 @@
 
 :root{
     --orange-color: #D0A452;
+    
 }
 
 .material-symbols-outlined {
@@ -207,4 +208,9 @@ form{
     margin: 20px 0px 0px 0px;
     flex-grow: 1;
     text-align: center;
+}
+@media screen and{
+    .form_contacts{
+        display: flex;
+    }
 }
